@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h> 
+#include "read_wrapper.h"
+#include "print_wrapper.h"
+
+int main()
+{
+   char commandBuffer[1024] = "" ;
+   char exitCommand[4] = "exit";
+   while(1)
+   {
+      read_string(commandBuffer);
+
+     if(strcmp(commandBuffer , exitCommand) == 0 )
+     {
+        break;
+     }
+     else
+     {
+        print_string(commandBuff);
+     }
+   }
+      
+  print_string("Good Bye :)");
+  return 0 ;
+}

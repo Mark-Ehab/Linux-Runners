@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+void read_string(char* str)
+{
+  printf("Enter the command > ");	
+  fgets(str , sizeof(str) , stdin);
+}
